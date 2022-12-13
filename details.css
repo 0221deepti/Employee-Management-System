@@ -1,0 +1,50 @@
+body {
+    background-color: pink;
+    background-image: url("../images/bg19.jpg");
+    background-size:1600px 800px;
+    }
+    
+    h1 {
+      color: white;
+      text-align: center;
+    }
+    h2{
+        color:black;
+        text-align: center;
+    }
+    p {
+      font-family: verdana;
+      font-size: 20px;
+    }
+    button {
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: rgb(228, 238, 85);
+      background-color: rgb(112, 119, 121);
+      border: none;
+      border-radius: 15px;
+     
+    }
+    
+    button::shadow {background-color:rgb(83, 83, 79)}
+    
+    button:active {
+      background-color: #3e8e41;
+      box-shadow: 1 5px #666;
+      transform: translateY(4px);
+    }
+    .box{
+        text-align:center;
+    height:200%;
+     width:100%;
+    border: 7px solid goldenrod;
+    background-image: url("../images/bg21.jpg");
+    }
+    label{
+      font-size: 25px;
+    }

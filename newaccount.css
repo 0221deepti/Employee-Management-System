@@ -1,0 +1,46 @@
+body {
+  background-color: pink;
+  background-image: url("../images/bg12.webp");
+  background-size:1600px 800px;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+  button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: rgb(18, 15, 236);
+    background-color: rgb(105, 207, 233);
+    border: none;
+    border-radius: 15px;
+   
+  }
+  
+  button::shadow {background-color: rgb(93, 227, 236)}
+  
+  button:active {
+    background-color: #3e8e41;
+    box-shadow: 1 5px #666;
+    transform: translateY(4px);
+  }
+  .box{
+  height:50%;
+   width:40%;
+  border: 7px solid black;
+  background-color:transparent;
+  }
+  label{
+    font-size: 25px;
+  }
