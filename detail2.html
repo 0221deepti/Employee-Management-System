@@ -1,0 +1,530 @@
+<html>  
+ <head>  
+     <link ref="stylesheet" href="/NSP/css/detail2.css">
+      <title>Employee Details Form</title>  
+ </head>
+ <body>  
+     <style>
+          .navbar{
+    padding:15px;
+    margin:0px;
+    background:rgb(32, 196, 218);
+    color:rgb(106, 222, 243);
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size:large;
+}
+
+.navbar ul{
+  margin: 0;
+  padding: 0;
+  list-style:none;
+  overflow:hidden;
+  display: flex;
+  
+}
+
+.navbar  li{
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  white-space:nowrap;
+  position:relative;
+  margin:10px;
+}
+
+  li a{
+  color:rgb(83, 68, 29);
+  text-decoration: none;
+}
+  li a:hover, .active{
+  background-color:#afafb6;
+  color:white;
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-bottom: 40px;
+  padding-right: 10px;
+  text-decoration: underline;}
+  body{  
+    font-family: "comic sans ms", sans serif;  
+    background-image:url(/NSP/images/bg17.jpg); 
+     
+    margin: 0;  
+}  
+h1{  
+    background-color:rgb(44, 42, 42);
+    color: white;  
+    padding: 10px;  
+    text-align: center;  
+
+}  
+h2{  
+    background-color:rgb(230, 221, 221);
+    color: rgb(7, 7, 7);  
+    padding: 10px;  
+    text-align: center;  }
+td{  
+    padding: 7px;  
+}  
+input{  
+    height: 30px;  
+    border-radius: 10px;  
+    border: none;  
+}  
+input:focus{  
+    outline: none;  
+    border: 1px solid forestgreen;  
+}  
+input:hover{  
+    background-color: 5px 5px 5px black;  
+}  
+.button{  
+    background-color: rgb(146, 8, 79);  
+    color:#fff;  
+    border: none;  
+    padding: 7px  
+}  
+.button:hover {  
+    cursor: pointer;  
+    box-shadow: 5px 5px 5px red;  
+}  </style>
+     <div class="navbar">
+          <ul>
+              <li><a  href="/NSP/home.html">HOME</a></li>
+              <li><a class="active " href="/NSP/detail2.html">DETAILS</a><li>
+            <li><a href="/NSP/attendance.html">MARK ATTENDANCE</a></li>
+              <li><a href="#contact">CONTACT US</a></li>
+              <li><a href="/NSP/index.html">LOGOUT</a></li>
+              
+           
+                </ul>
+          
+          </ul>
+      </div>
+      <h1 align="center">EMPLOYEE DETAILS FORM</h1>  
+      <form>  
+           <div id="personal-details">  
+           <h2 align="center">Personal Deatils</h2>  
+                <table width="100%">  
+                     <tr>  
+                          <td>First Name</td>  
+                          <td>  
+                               <input type="text" placeholder="First Name" size="25">  
+                          </td>  
+                          <td>Middle Name</td>  
+                          <td>  
+                               <input type="text" placeholder="Middle Name" size="25">  
+                          </td>  
+                          <td>Last Name</td>  
+                          <td>  
+                               <input type="text" placeholder="Last Name"size="25">  
+                          </td>  
+                     </tr>  
+                     <tr>  
+                          <td>Father's Name</td>  
+                          <td>  
+                               <input type="text" placeholder="Father's Name" size="25">  
+                          </td>  
+                          <td>Mother's Name</td>  
+                          <td>  
+                               <input type="text" placeholder="Father's Name" size="25">  
+                          </td>  
+                     </tr>  
+                     <tr>  
+                          <td>Date of Birth</td>  
+                          <td>  
+                               <input type="date">  
+                          </td>  
+                          <td>Place of Birth</td>  
+                          <td>  
+                               <input type="text" placeholder="Place of Birth" size="25">  
+                          </td>  
+                     </tr>  
+                     <tr>  
+                          <td colspan="2">Gender</td>  
+                          <td>  
+                               <input type="radio" name="gender" value="male">Male  
+                          </td>  
+                          <td>  
+                               <input type="radio" name="gender" value="feale">Female  
+                          </td>
+                          <td>  
+                            <input type="radio" name="gender" value="feale">Transgender  
+                       </td>  
+                     </tr>    
+                     <tr>  
+                          <td>Mobile Number</td>  
+                          <td>  
+                               <input type="number" placeholder="9831****" size="25">  
+                          </td>  
+                          <td>Email Id</td>  
+                          <td>  
+                               <input type="text" placeholder="your id@gmail.com" size="25">  
+                          </td>  
+                     </tr>  
+                     <tr>  
+                          <td colspan="2">Language Known</td>  
+                          <td>  
+                               <input type="checkbox" value="english">English  
+                          </td>    
+                          <td>  
+                               <input type="checkbox" value="hindi">Hindi  
+                          </td>  
+                     </tr>  
+                     <tr>  
+                          <td colspan="2">Mother Tongue</td>  
+                          <td>  
+                               <select>  
+                                    <option>English</option>  
+                                    <option>Hindi</option>  
+                                    <option>Other</option>  
+                               </select>  
+                          </td>  
+                     </tr>  
+                     <tr>  
+                          <td>Aadhar Number</td>  
+                          <td>  
+                               <input type="number" placeholder="Aadhar Number" size="25">  
+                          </td>  
+                          <td>Pan Card Number</td>  
+                          <td>  
+                               <input type="number" placeholder="Pan Card Number" size="25">  
+                          </td>  
+                     </tr>  
+                </table>  
+           </div>  
+             
+           <div id="address-details">  
+           <h2>Address Details</h2>  
+                <h3>A) Present Address</h3>  
+                <table width="100%">  
+                     <tr>  
+                          <td>Country</td>  
+                          <td>  
+                               <input type="radio" name="gender" value="indian">India 
+                          </td>  
+                          <td>  
+                               <input type="radio" name="gender" value="other">Other  
+                          </td>  
+                     </tr>  
+                     <tr>  
+                          <td>State</td>  
+                          <td>
+                            <select>
+                                <option>--Select--</option>
+                                <option>Rajasthan</option>  
+                                <option>Maharashtra</option>  
+                                <option>Gujarat</option>  
+                                <option>Uttar Pradesh</option>  
+                                <option>West Bengal</option>  
+                                <option>Tamil Nadu</option>  
+                                <option>Punjab</option>  
+                                <option>Haryana</option>  
+                                <option>Bihar</option>  
+                                <option>Karnataka</option>  
+                                <option>Andhra Pradesh</option>  
+                                <option>Chhattisgarh</option>
+
+                            </select>
+                          </td>  
+                     </tr>  
+                     <tr>  
+                          <td>District</td>  
+                          <td>  
+                               <select>  
+                                    <option>--Select--</option>
+                                    <option>North 24 Parganas</option>  
+                                    <option>South 24 Parganas</option>  
+                                    <option>North 24 Parganas</option>  
+                                    <option>South 24 Parganas</option>  
+                                    <option>North 24 Parganas</option>  
+                                    <option>South 24 Parganas</option>  
+                                    <option>North 24 Parganas</option>  
+                                    <option>South 24 Parganas</option>  
+                                    <option>North 24 Parganas</option>  
+                                    <option>South 24 Parganas</option>  
+                                    <option>North 24 Parganas</option>  
+                               </select>  
+                          </td>  
+                     </tr>    
+                     <tr>    
+                          <td>House No / Road:</td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>
+                          <td>Pin Code</td>  
+                          <td>  
+                               <input type="phone" size="25">  
+                          </td> 
+                     </tr>    
+                </table>  
+                <br><br>  
+           </div>  
+           <div>  
+                <h3>B) Permanent Address</h3>  
+                <table width="100%">  
+                     <tr>  
+                          <td colspan="2">Same as Present Address</td>  
+                          <td>  
+                               <input type="radio" name="Address" value="yes">Yes  
+                          </td>  
+                          <td>  
+                               <input type="radio" name="Address" value="no">No  
+                          </td>  
+                     </tr>  
+                     <tr>  
+                          <td>Country</td>  
+                          <td>  
+                               <input type="radio" name="gender" value="indian">India  
+                          </td>  
+                          <td>  
+                               <input type="radio" name="gender" value="other">Other  
+                          </td>  
+                     </tr>  
+                     <tr>  
+                          <td>State</td>  
+                          <td>  
+                            <select>
+                                <option>--Select--</option>  
+                                <option>Rajasthan</option>  
+                                <option>Maharashtra</option>  
+                                <option>Gujarat</option>  
+                                <option>Uttar Pradesh</option>  
+                                <option>West Bengal</option>  
+                                <option>Tamil Nadu</option>  
+                                <option>Punjab</option>  
+                                <option>Haryana</option>  
+                                <option>Bihar</option>  
+                                <option>Karnataka</option>  
+                                <option>Andhra Pradesh</option>  
+                                <option>Chhattisgarh</option>  
+                           </select>
+                          </td>  
+                     </tr>  
+                     <tr>  
+                          <td>District</td>  
+                          <td>  
+                               <select>
+                                   <option>--Select--</option>
+                                   <option>Rajasthan</option>  
+                                    <option>Maharashtra</option>  
+                                    <option>Gujarat</option>  
+                                    <option>Uttar Pradesh</option>  
+                                    <option>West Bengal</option>  
+                                    <option>Tamil Nadu</option>  
+                                    <option>Punjab</option>  
+                                    <option>Haryana</option>  
+                                    <option>Bihar</option>  
+                                    <option>Karnataka</option>  
+                                    <option>Andhra Pradesh</option>  
+                                    <option>Chhattisgarh</option>
+                               </select>  
+                          </td>  
+                     </tr>    
+                     <tr>    
+                          <td>House No / Road:</td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>  
+                          <td>Pin Code</td>  
+                          <td>  
+                               <input type="phone" size="25">  
+                          </td>
+                     </tr>    
+                </table>  
+           </div>    
+           <div id="educational-qualification">  
+           <h2> Educational Qualification</h2>  
+                <table width="100%">  
+                     <tr>  
+                          <td>Sl</td>  
+                          <td>Qualification</td>  
+                          <td>Instituited / University</td>  
+                          <td>Year of Passing</td>  
+                          <td>Marks (%)</td>  
+                     </tr>  
+                     <tr>  
+                          <td>1</td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>  
+                     </tr>  
+                     <tr>  
+                          <td>2</td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>  
+                     </tr>  
+                     <tr>  
+                          <td>3</td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>  
+                     </tr>  
+                     <tr>  
+                          <td>4</td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>  
+                     </tr>  
+                </table>  
+           </div>   
+           <div id="work-experience">  
+           <h2>Work Experience</h2>  
+                <table width="100%">  
+                     <tr>  
+                          <td>Sl No</td>  
+                          <td>Company Address</td>  
+                          <td>Work / Role</td>  
+                          <td>Duration (form - to)</td>  
+                     </tr>  
+                     <tr>  
+                          <td>1</td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>  
+                          <td>  
+                               <input type="date" size="25">  
+                          </td>  
+                          <td>  
+                               <input type="date" size="25">  
+                          </td>  
+                     </tr>  
+                     <tr>  
+                          <td>2</td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>  
+                          <td>  
+                               <input type="date" size="25">  
+                          </td>  
+                          <td>  
+                               <input type="date" size="25">  
+                          </td>  
+                     </tr>  
+                     <tr>  
+                          <td>3</td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>  
+                          <td>  
+                               <input type="date" size="25">  
+                          </td>  
+                          <td>  
+                               <input type="date" size="25">  
+                          </td>  
+                     </tr>  
+                     <tr>  
+                          <td>4</td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>  
+                          <td>  
+                               <input type="text" size="25">  
+                          </td>  
+                          <td>  
+                               <input type="date" size="25">  
+                          </td>  
+                          <td>  
+                               <input type="date" size="25">  
+                          </td>  
+                     </tr>  
+                </table>  
+           </div>    
+           <div id="other-details">  
+           <h2>Other Details</h2>  
+                <table width="100%">  
+                     <tr>  
+                          <td>Job Type</td>  
+                          <td>  
+                               <input type="radio" name="jobtype" value="permanent">Permanent  
+                          </td>  
+                          <td>  
+                               <input type="radio" name="jobtype" value="contrect">Contract  
+                          </td>  
+                          <td>  
+                               <input type="radio" name="jobtype" value="other">Intern  
+                          </td>
+                          <td>  
+                            <input type="radio" name="jobtype" value="other">Other  
+                          </td>  
+                     </tr>  
+                     <tr>  
+                          <td>Date Of Joining</td>  
+                          <td>  
+                               <input type="date">  
+                          </td>    
+                     <tr>  
+                          <td>Employee Designation</td>
+                          <td>  
+                            <input type="text" name="Designation" placeholder="Designation" size="25">  
+                          </td> 
+                            
+                     </tr>
+                     <tr>  
+                         <td>Salary</td>
+                         <td>  
+                              <input type="text" name="Salary" placeholder="in rupees" size="25"> 
+                         </td> 
+                           
+                    </tr>
+                     <tr>  
+                          <td></td>  
+                          <td>  
+                               <input type="Submit" value="Save" class="button">  
+                          </td>  
+                          <td>  
+                               <input type="Reset" value="Reset" class="button">  
+                          </td>  
+                          <td></td>  
+                     </tr>  
+                </table>  
+           </div>  
+      </form>   
+ </body>  
+ </html>
